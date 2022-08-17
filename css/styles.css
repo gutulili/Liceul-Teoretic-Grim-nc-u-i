@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    background: rgb(13, 105, 133);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: rgb(158, 195, 238);
+    text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background: rgba(13, 105, 133);
+    ;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0px;
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+section {
+    padding: 90px 15%
+}
+
+
+.logo {
+    height: 50px;
+}
+
+#index {
+    background: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0.041)), url('../images/index.jpg');
+    background-size: cover;
+    min-height: 100vh;
+
+    background-position: 30% 35%;
+    background-attachment: fixed;
+}
+
+.index-info {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 350%;
+    color: white;
+    border: 2px solid rgb(10, 11, 83);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(73, 144, 165, 0.849);
+
+}
+
+.link-index {
+    color: rgb(3, 2, 53);
+    font-size: 30px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.loc {
+    overflow: auto;
+    border-bottom: 2px rgb(120, 236, 236) dashed;
+    margin-bottom: 15px;
+}
+
+.loc img {
+    height: 20vh;
+    width: 20vh;
+    object-fit: cover;
+    border-radius: 25%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.contacte,
+.cform {
+    border: 2px solid #8d81f1;
+    border-radius: 5px;
+    background-color: #bcd2e7;
+    padding: 5px 5%;
+    height: 325px;
+    margin-bottom:15px ;
+}
+
+
+.cform input,
+.cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe {
+        height: 55vw;
+    }
+
+ [class^="col-"] {
+    width: 100% !important;
+ }
+
+    navbar  a {
+        display: none;
+    }
+
+    navbar.mobile a {
+       display: block; 
+       text-align: center;
+       margin-top: 12px;
+    }
+
+    navbar  {
+        display: block;
+    }
+    #hamburger {
+        display: block;
+    }
+
+}
